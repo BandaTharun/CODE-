@@ -5,7 +5,8 @@ import pymongo
 db = client.test
 collection = db["my_collection"]
 
-# insert a document
+
+# insert a document.
 result = collection.insert_one({"name": "John Doe", "age": 30})
 print(result.inserted_id)
 
